@@ -94,7 +94,7 @@ def recaptcha():
             if sb.assert_element(msgBlock, timeout=20):
                 body = sb.get_text(msgBlock)
                 print('- 💣 maybe block by google\n', body)
-                body = '[%s***]\n💣 %s' % (username[:3], body)
+                body = '[%s]\n💣 %s' % (username[:10], body)
                 break
             elif tryReCAPTCHA > 3:
                 break
