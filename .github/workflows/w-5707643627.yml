@@ -50,7 +50,7 @@ jobs:
           
       - name: 'Renew'
         env:
-          URL_BASE: ${{ secrets.URL_BASE_H }}
+          URL_BASE: ${{ secrets.URL_BASE_W }}
           USERNAME: ${{ secrets.USERNAME_5707643627 }}
           PASSWORD: ${{ secrets.PASSWORD }}
           BARK_TOKEN: ${{ secrets.BARK_TOKEN }}
