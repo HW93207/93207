@@ -225,10 +225,10 @@ def renew_check():
         i += 1
     print('- response [After %d run(s)]: %s' % (countRenew, body))
     if 'renew' in body:
-        body = '[%s***][After %d run(s)]\n🎉 %s' % (username[:10], countRenew, body)
+        body = '[%s][After %d run(s)]\n🎉 %s' % (username[:10], countRenew, body)
         return True
     else:
-        body = '[%s***][After %d run(s)]\n💣 %s' % (username[:10], countRenew, body)
+        body = '[%s][After %d run(s)]\n💣 %s' % (username[:10], countRenew, body)
 
 
 
